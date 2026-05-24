@@ -27,7 +27,7 @@ class Solution:
                     map1.pop(s[j])
                 else:
                     map1[s[j]] -= 1
-                if map1[s[j]] < map2[s[j]]:
+                if map1.get(s[j], 0) < map2[s[j]]:
                     mct-=1
                 l2 = True
             if l1 == False and l2 == False:
